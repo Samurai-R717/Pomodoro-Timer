@@ -1,0 +1,141 @@
+html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(background.png);
+}
+
+body {
+    margin: 0px;
+}
+
+
+
+h1 {
+    padding: 10px 20px 10px 20px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    align-items: stretch;
+    font-size: 30px ;
+    margin-right: 28px;
+    margin-left: 28px;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(255, 135, 155);
+    justify-content: center;
+    display: flex;
+    margin: 0px;
+    padding: 0 20px;
+}
+
+.nav a{
+    padding: 15px;
+}
+
+.navbar li{
+    float: left;
+}
+
+#container {
+    height: 200px;
+    width: 700px;
+    background-color: #F5E4C3;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    border: 5px solid #88B169;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/*timers*/
+.label {
+    align-self: center;
+    justify-self: center;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#work {
+    grid-area: 1 / 2 / 1 / 2;
+}
+#break {
+    grid-area: 1 / 4 / 1 / 4;
+}
+#cycles {
+    grid-area: 1 / 4 / 1 / 3;
+}
+
+.timer {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#counter {
+    grid-area: 2 / 3 / 2 / 3;
+    color: red;
+}
+
+#work-timer {
+    grid-area: 2 / 2 / 2 / 2;
+}
+
+#break-timer {
+    grid-area: 2 / 4 / 2 / 4;
+}
+
+/*buttons*/
+
+.btn {
+    align-self: center;
+    justify-self: center;
+
+    width: 100px;
+    height: 30px;
+
+    font-size: 20px;
+}
+
+#start {
+    grid-area: 3 / 2 / 3 / 2;
+}
+
+#reset {
+    grid-area: 3 / 3 / 3 / 3;
+}
+
+#stop {
+    grid-area: 3 / 4 / 3 / 4;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    margin: 10px 17px 0 0;
+}
+
+#brat-brand{
+   height: 60px;
+   width: 160px;
+   margin: 20px 17px 0 0;
+}
+
+.message {
+    margin: 700px 200px 0 200px;
+}

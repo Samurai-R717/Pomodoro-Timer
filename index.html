@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Pomodoro.css">
+    <title>Pomodoro Timer</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+        <lis><a href="#"><img src="brat icon.png"></a></lis>
+        <lis><a href="#"><img id="brat-brand" src="brat.png"></a></lis>
+        <lis><h1>Pomodoro Timer</h1></lis>
+        <lis><a href="https://apatarman19.wixsite.com/brat" target="_blank"><img src="website.png"></a></lis>
+        <lis><a href="https://www.facebook.com/profile.php?id=61568213400947" target="_blank"><img src="facebook.png"></a></lis>
+        <lis><a href="https://www.tiktok.com/@bratcampaign?fbclid=IwZXh0bgNhZW0CMTEAAR0d7xNGemPtZ669lIZt11gADlApwHOQGtk53WEaSK6oSHrt7Yj2GWNCG6I_aem_0Y7Wtk6hOQh1AKHEjEmr6A"  target="_blank"><img src="tiktok.png"></a></lis>
+        </ul>
+    </nav>
+    <div class="message"><p>The Pomodoro Timer is a free website that BRAT created for students who would like to try the Pomodoro Technique. This tool will enable students to study efficiently and managed their time to avoid procrastination. This code was source from <a href="https://github.com/learn-webdevYT/Javascript-Beginner-Tutorials" target="_blank">https://github.com/learn-webdevYT/Javascript-Beginner-Tutorials</a> and modified by us. For more inquiries please email us at <a href="mailto:https://mail.google.com/mail/u/0/#inbox">bratetech@gmail.com</a></p></div>
+    <div id="container">
+        <p id="work" class="label">Work:</p><p id="break" class="label">Break:</p><p id="cycles" class="label">Cycles:</p>
+        <!--Work Timer-->
+        <div id="work-timer" class="timer">
+            <p id="w_minutes">25</p><p class="semicolon">:</p><p id="w_seconds">00</p>
+        </div>
+
+        <!--Cycle Counter-->
+        <p id="counter" class="timer">0</p>
+
+        <!--Break Timer-->
+        <div id="break-timer" class="timer">
+            <p id="b_minutes">05</p><p class="semicolon">:</p><p id="b_seconds">00</p>
+        </div>
+        <button id="start" class="btn">Start</button>
+        <button id="stop" class="btn">Pause</button>
+        <button id="reset" class="btn">Reset</button>
+    </div>
+    <script src="Pomodoro.js"></script>
+</body>
+</html>
